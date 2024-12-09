@@ -1,0 +1,151 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/photos-gratuite/coffrets-cadeaux-branches-vertes-table_23-2147970629.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* Liste des participants */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #d43f3f;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons */
+button {
+    background-color: #d43f3f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #bf3636;
+}
+
+/* Texte pour les participants déjà tirés */
+em {
+    font-style: italic;
+    color: #555;
+}
+
+/* Formulaire de réinitialisation */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #d43f3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #bf3636;
+}
+
+/* Lien retour */
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+
+/* Cadre des résultats */
+.results {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid #d43f3f;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.results h2 {
+    color: #d43f3f;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.results p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.results a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d43f3f;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.results a:hover {
+    background-color: #bf3636;
+    color: #ffd700;
+}
+
