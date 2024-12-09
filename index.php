@@ -1,4 +1,5 @@
 <?php
+
 // Initialisation des participants
 $participants = ["Noé", "Théo", "Antoine", "Valerien", "Sarah", "Camille"];
 $results_file = "results.txt";
@@ -121,6 +122,17 @@ if ($action === "results" && $participant) {
 // Charger les données pour l'affichage
 [$bêtise_list, $sérieux_list] = load_lists($results_file);
 $results = load_results($results_file);
+
+$resultsperson = [];
+if (file_exists('results.txt')) {
+    $lines = file('results.txt', FILE_IGNORE_NEW_LINES);
+    foreach ($lines as $line) {
+        if (strpos($line, 'RESULT:') === 0) {
+            $resultsperson[] = str_replace('RESULT:', '', $line);
+        }
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -165,5 +177,9 @@ $results = load_results($results_file);
             <button type="submit">Réinitialiser</button>
         </form>
     <?php endif; ?>
+     <script>
+            const results = <?php echo json_encode($resultsperson); ?>; // Charger les résultats depuis PHP
+            console.log("Résultats totaux :", results); // Afficher les résultats en console
+      </script>
 </body>
 </html>

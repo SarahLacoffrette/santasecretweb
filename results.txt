@@ -1,2 +1,8 @@
-Noé,Théo,Antoine,Valerien,Sarah,Camille
-Noé,Théo,Antoine,Valerien,Sarah,Camille
+
+
+RESULT:Noé,Théo,Valerien
+RESULT:Antoine,Camille,Théo
+RESULT:Valerien,Antoine,Antoine
+RESULT:Camille,Sarah,Noé
+RESULT:Théo,Noé,Sarah
+RESULT:Sarah,Valerien,Camille
